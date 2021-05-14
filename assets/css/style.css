@@ -137,6 +137,8 @@ table {
   margin: .4em 0;
 }
 
+#update_user .form-group input[type="email"],
+#add_user .form-group input[type="email"],
 #update_user .form-group input[type="text"],
 #add_user .form-group input[type="text"]{
   width: 100%;

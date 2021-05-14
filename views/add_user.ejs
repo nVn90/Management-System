@@ -1,6 +1,6 @@
 <!-- include header -->
 <%- include('include/_header')%>
-<!-- /include header -->
+  <!-- /include header -->
 
 
   <!-- Main Section -->
@@ -19,7 +19,9 @@
       </div>
 
       <!-- form handling -->
-      <%- include('include/_form')%>
+      <form autocomplete="off" action="/api/users" id="add_user" method="POST">
+        <%- include('include/_form')%>
+      </form>
 
     </div>
   </main>
@@ -27,6 +29,6 @@
   <!-- /Main Section -->
 
 
-<!-- include footer -->
-<%- include('include/_footer')%>
-<!-- /include footer -->
+  <!-- include footer -->
+  <%- include('include/_footer')%>
+    <!-- /include footer -->
