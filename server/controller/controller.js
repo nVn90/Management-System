@@ -66,7 +66,7 @@ exports.update = (req, res) => {
     return res.status(400).send({ message: "Data to update cannot be empty" });
   }
   const id = req.params.id;
-  Userdb.findByIdAndUpdate(id, req.body, { userFindAndModify: false })
+  Userdb.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
     .then((data) => {
       if (!data) {
         res
